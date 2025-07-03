@@ -355,6 +355,12 @@
             align-items: center;
         }
 
+        .experience-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
         .about-text {
             flex: 1;
         }
@@ -395,7 +401,7 @@
 
         /* Education Section */
         #education {
-            background-color: var(--bg-primary);
+            background-color: var(--bg-secondary);
         }
 
         .timeline {
@@ -484,7 +490,7 @@
 
         /* Skills Section */
         #skills {
-            background-color: var(--bg-primary);
+            background-color: var(--bg-secondary);
         }
 
         .skills-container {
@@ -590,7 +596,7 @@
 
         /* Projects Section */
         #projects {
-            background-color: var(--bg-secondary);
+            background-color: var(--bg-primary);
         }
 
         .projects-container {
@@ -618,6 +624,24 @@
             width: 100%;
             height: 200px;
             overflow: hidden;
+        }
+
+        .project-image1 {
+            width: 600px;
+            height: 600px;
+            overflow: hidden;
+            margin-top: 40px;
+            margin-right: -100px;
+        }
+
+        .project-image1 img {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            border-radius: 30px;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 0 30px rgba(5, 71, 81, 0.5);
         }
 
         .project-image img {
@@ -682,7 +706,7 @@
 
         /* Contact Section */
         #contact {
-            background-color: var(--bg-secondary);
+            background-color: var(--bg-primary);
         }
 
         .contact-container {
@@ -704,11 +728,11 @@
             list-style: none;
         }
 
-        .contact-details1{
+        .contact-details1 {
             margin-left: 40%;
         }
 
-        .contact-details2{
+        .contact-details2 {
             margin-left: 10%;
         }
 
@@ -956,6 +980,7 @@
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -1046,6 +1071,38 @@
         </div>
     </section>
 
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="about-text">
+                    <h2 style="color: var(--accent-color);">Internship at T.I.M.E</h2>
+                    <h4 style="margin-bottom: 50px;">June 2025 - Present</h4>
+                    <div class="skillsinintern" style="display: flex;">
+                        <h3>Skills:</h3>
+                        <p style="margin-top: 3px;margin-left: 10px; ">React.js, Next.js, Node.js, Express.js, MySQL</p>
+                    </div>
+                    <p>
+                        I'm currently working as a Full Stack Developer Intern at T.I.M.E (virtual), where I completed a
+                        partially developed web application for automating payslip generation and email distribution
+                        from Excel uploads.
+                    </p>
+                    <p>
+                        I also built and maintained key modules for managing employees, departments, designations, and
+                        company profiles using React, Next.js, Node.js, and MySQL. This experience strengthened my
+                        skills in full-stack development, REST API integration, and building clean, scalable interfaces
+                        with efficient backend logic.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="project-image1">
+                        <img src="images/time_1.png" alt="T.I.M.E Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
@@ -1086,7 +1143,7 @@
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="projects-container">                
+            <div class="projects-container">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="images/scm1.png" alt="Smart City Management Project">
@@ -1114,8 +1171,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/propertyguardian.jpg"
-                            alt="Property Guardian Project">
+                        <img src="images/propertyguardian.jpg" alt="Property Guardian Project">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Property Guardian</h3>
@@ -1137,8 +1193,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/wanderlust.jpg"
-                            alt="WanderLust Project">
+                        <img src="images/wanderlust.jpg" alt="WanderLust Project">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">WanderLust</h3>
@@ -1342,7 +1397,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Prasad Simhadri</p>
+                <p>&copy;  Prasad Simhadri</p>
             </div>
         </div>
     </footer>
